@@ -2,6 +2,12 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
+  // not enough input arguments
+  if (argc < 2) {
+    printf("my-zip: file1 [file2 ...]\n");
+    exit(1);
+  }
+  
   FILE *fp;
   int i, c, p, counter;
 
@@ -9,11 +15,6 @@ int main(int argc, char *argv[]) {
   p = 0;
   // counter is amount of characters
   counter = 1;
-
-  // not enough input arguments
-  if (argc < 2) {
-    return 0;
-  }
 
   for (i = 1; i < argc; i++) {
     fp = fopen(argv[i], "r");

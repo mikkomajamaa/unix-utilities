@@ -2,6 +2,12 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
+  // not enough input arguments
+  if (argc < 2) {
+    printf("my-unzip: file1 [file2 ...]\n");
+    exit(1);
+  }
+
   FILE *fp;
   int i, j, k;
   // c is count of characters
