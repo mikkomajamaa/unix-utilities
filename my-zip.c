@@ -27,9 +27,9 @@ int main(int argc, char *argv[]) {
           counter += 1;
         } else {
           //putchar(p);
-          //fwrite(&counter, 4, 1, stdout);
+          fwrite(&counter, 4, 1, stdout);
           // TODO: change to 4-byte integer in binary form
-          printf("%d", counter);
+          //printf("%d", counter);
           printf("%c", p);
           //printf("%d", counter);
           counter = 1;
