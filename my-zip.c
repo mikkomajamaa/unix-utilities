@@ -3,7 +3,7 @@
 
 int main(int argc, char *argv[]) {
   FILE *fp;
-  int i, c, p, counter, procs;
+  int i, c, p, counter;
 
   // p is the character to be counted
   p = 0;
